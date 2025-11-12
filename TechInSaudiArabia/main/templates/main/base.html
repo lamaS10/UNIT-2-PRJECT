@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>{% block title %}Tech in Saudi Arabia{% endblock %}</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    {% block extra_css %}{% endblock %}
+</head>
+
+<body class="{% if request.COOKIES.theme == 'dark' %}theme-dark{% else %}theme-light{% endif %} {{ request.resolver_match.url_name }}">
+
+
+  <header class="navbar">
+
+    <button class="menu-toggle" aria-label="Toggle navigation">
+      <span class="material-icons">menu</span>
+    </button>
+
+    <div class="brand">
+      <a href="{% url 'main:home_view' %}" class="brand-link">Tech in Saudi Arabia</a>
+    </div>
+
+    <nav class="nav">
+      <a href="{% url 'main:home_view' %}" class="active">Home</a>
+      <a href="{% url 'main:ai_view' %}">AI</a>
+      <a href="{% url 'main:neom_view' %}">NEOM</a>
+      <a href="{% url 'main:digital_view' %}">Digital Transformation</a>
+      <a href="{% url 'main:space_view' %}">Space</a>
+      <a href="{% url 'main:energy_view' %}">Energy</a>
+    </nav>
+
+    <div class="actions">
+      <div class="mode-toggle">
+        <a href="{% url 'main:switch_mode' %}" 
+           class="theme-icon {% if request.COOKIES.theme != 'dark' %}active{% endif %}" 
+           title="Switch to Dark Mode">
+          <span class="material-icons">wb_sunny</span>
+        </a>
+
+        <a href="{% url 'main:switch_mode' %}" 
+           class="theme-icon {% if request.COOKIES.theme == 'dark' %}active{% endif %}" 
+           title="Switch to Light Mode">
+          <span class="material-icons">dark_mode</span>
+        </a>
+      </div>
+    </div>
+
+  </header>
+
+  <main class="page">
+    {% block content %}{% endblock %}
+  </main>
+
+   <footer class="site-footer">
+        <div class="footer-nav">
+            <a href="{% url 'main:contact_view' %}" class="footer-link">Contact Us</a>
+            <span class="divider">•</span>
+            <a href="{% url 'main:resources_view' %}" class="footer-link">Useful Links</a>
+        </div>
+        <p>© 2025 Tech in Saudi Arabia — All rights reserved.</p>
+    </footer>
+
+
+  <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+</html>

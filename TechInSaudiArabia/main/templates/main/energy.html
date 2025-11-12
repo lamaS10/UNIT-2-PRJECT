@@ -1,0 +1,127 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}Energy in Saudi Arabia - Tech in Saudi Arabia{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/energy.css' %}">
+{% endblock %}
+
+{% block content %}
+
+
+
+<section class="page-banner energy-banner">
+  <div class="overlay"></div>
+  <div class="banner-content">
+    <h1>Energy in Saudi Arabia</h1>
+    <p>Innovating sustainable power for the future</p>
+  </div>
+</section>
+
+<section class="aramco-section">
+  <div class="aramco-content">
+    <div class="aramco-text">
+      <h2>About Aramco</h2>
+      <p>
+        Saudi Aramco stands at the heart of the Kingdom's energy transformation.
+        Beyond oil, the company invests heavily in renewable energy, smart grids, and clean technologies,
+        aiming to lead the world toward a more efficient and sustainable future.
+      </p>
+    </div>
+    <div class="aramco-image">
+      <img src="{% static 'images/energy/aramco_building.webp' %}" alt="Aramco Building">
+    </div>
+  </div>
+</section>
+
+<section class="ithra-section">
+  <div class="ithra-content">
+    <div class="ithra-image">
+      <img src="{% static 'images/energy/ithra_center.jpg' %}" alt="Ithra Center">
+    </div>
+    <div class="ithra-text">
+      <h2>Innovation & Knowledge — Ithra</h2>
+      <p>
+        The King Abdulaziz Center for World Culture (Ithra), an initiative by Aramco,
+        stands as a symbol of innovation and creativity in Saudi Arabia.
+        Ithra drives educational, cultural, and technological initiatives
+        that inspire a sustainable and intelligent energy future.
+      </p>
+      <p>
+        From promoting science and clean technologies to empowering young innovators,
+        Ithra embodies Saudi Arabia's vision for a knowledge-driven economy under Vision 2030.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="projects-section">
+  <h2>Smart Energy Projects</h2>
+  <div class="energy-cards">
+    <div class="energy-card">
+      <img src="{% static 'images/energy/solar_sakaka.png' %}" alt="Sakaka Solar Plant">
+      <div class="card-content">
+        <h3>Sakaka Solar Plant</h3>
+        <p>Saudi Arabia's first utility-scale solar energy project, producing clean power for thousands of homes.</p>
+      </div>
+    </div>
+
+    <div class="energy-card">
+      <img src="{% static 'images/energy/dumat_al_jandal.webp' %}" alt="Dumat Al Jandal Wind Farm">
+      <div class="card-content">
+        <h3>Dumat Al Jandal Wind Farm</h3>
+        <p>The Kingdom's first wind power plant — harnessing natural wind to generate clean energy efficiently.</p>
+      </div>
+    </div>
+
+    <div class="energy-card">
+      <img src="{% static 'images/energy/solar_farm.jpg' %}" alt="Solar Expansion Project"> 
+      <div class="card-content">
+        <h3>Solar Expansion Project</h3>
+        <p>Driving the Kingdom's clean energy future through advanced solar initiatives like the <strong>Sudair Plant </strong> and <strong>REPDO projects </strong> under Vision 2030.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="energy-gallery">
+  <h2>Renewable Energy in Action</h2>
+  <p class="gallery-subtitle">
+    A glimpse into Saudi Arabia's growing clean energy landscape —
+    showcasing solar farms in Sakaka and wind turbines in Dumat Al Jandal.
+  </p>
+
+  <div class="gallery-wrapper">
+    <button class="scroll-btn left" aria-label="Scroll Left">
+      <span>&#10094;</span>
+    </button>
+
+    <div class="scroll-gallery" id="scrollGallery">
+      <img src="{% static 'images/energy/solar_panels.jpg' %}" alt="Solar Panels in Saudi Arabia">
+      <img src="{% static 'images/energy/wind_turbines.jpg' %}" alt="Wind Turbines in Dumat Al Jandal">
+      <img src="{% static 'images/energy/wind_field.webp' %}" alt="Wind Field in Saudi Desert">
+      <img src="{% static 'images/energy/solar_farm.jpg' %}" alt="Solar Farm in Sakaka">
+      <img src="{% static 'images/energy/aramco_research_center.webp' %}" alt="Aramco Research Center">
+    </div>
+
+    <button class="scroll-btn right" aria-label="Scroll Right">
+      <span>&#10095;</span>
+    </button>
+  </div>
+</section>
+
+
+<section class="energy-conclusion">
+  <div class="container">
+    <p>
+      Saudi Arabia is leading a new era of intelligent and sustainable energy —
+      where innovation, technology, and the environment move together toward Vision 2030.
+    </p>
+  </div>
+</section>
+
+
+{% endblock %}

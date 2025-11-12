@@ -1,0 +1,65 @@
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block title %}Home — Tech in Saudi Arabia{% endblock %}
+
+{% block content %}
+
+<section class="hero-test">
+  <div class="slideshow">
+    <img src="{% static 'images/hero_banner/tech1.avif' %}" class="slide active" alt="Saudi Digital Map">
+    <img src="{% static 'images/hero_banner/riyadh.jpg' %}" class="slide" alt="Riyadh City">
+    <img src="{% static 'images/hero_banner/tech3.jpg' %}" class="slide" alt="Saudi Digital Transformation">
+    <img src="{% static 'images/hero_banner/ithra_center.jpg' %}" class="slide" alt="Ithra Center">
+    <img src="{% static 'images/hero_banner/tech6.jpg' %}" class="slide" alt="Artificial Intelligence">
+    <img src="{% static 'images/hero_banner/tech2.png' %}" class="slide" alt="Satellite Innovation">
+    <img src="{% static 'images/hero_banner/theline.jpg' %}" class="slide" alt="NEOM The Line">
+  </div>
+
+  <div class="overlay"></div>
+
+  <div class="hero-content-test">
+    <h1>Tech in Saudi Arabia</h1>
+    <p>Exploring the Kingdom's innovation journey toward a smarter, connected future.</p>
+    <a href="#explore-section" class="hero-btn">Learn More</a>
+  </div>
+</section>
+
+
+
+
+
+<section id="explore-section" class="explore">
+  <h2>Discover Saudi Arabia's Tech Frontiers </h2>
+  <p>Discover how innovation is shaping everyday life and driving the Kingdom toward a smarter, sustainable future.</p>
+
+  <div class="explore-grid">
+    <a href="{% url 'main:ai_view' %}" class="explore-card">
+      <h3>Artificial Intelligence</h3>
+      <p>From smart cities to predictive analytics — AI is empowering Vision 2030's digital transformation.</p>
+    </a>
+
+    <a href="{% url 'main:neom_view' %}" class="explore-card">
+      <h3>NEOM</h3>
+      <p>A futuristic city built on innovation — redefining sustainability and modern living.</p>
+    </a>
+
+    <a href="{% url 'main:digital_view' %}" class="explore-card">
+      <h3>Digital Transformation</h3>
+      <p>Driving government and business transformation through digitalization, data, and cloud innovation.</p>
+    </a>
+
+    <a href="{% url 'main:space_view' %}" class="explore-card">
+      <h3>Space</h3>
+      <p>Saudi Arabia's leap into space — advancing research, exploration, and global collaboration.</p>
+    </a>
+
+    <a href="{% url 'main:energy_view' %}" class="explore-card">
+      <h3>Energy</h3>
+      <p>From oil to green hydrogen — leading the world in sustainable energy innovation.</p>
+    </a>
+
+  </div>
+</section>
+
+{% endblock %}

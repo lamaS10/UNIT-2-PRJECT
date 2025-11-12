@@ -1,0 +1,221 @@
+
+/* hero banner */
+.page-banner.space-banner {
+  position: relative;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  height: 65vh;
+  background-image: url("../images/space/space_banner.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+
+.space-banner .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.4)
+  );
+}
+
+.space-banner .banner-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.space-banner h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.space-banner p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.space-section {
+  padding: 80px 12%;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.space-section h2 {
+  font-size: 2rem;
+  color: var(--green);
+  margin-bottom: 20px;
+}
+
+.space-section p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: inherit;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.astronaut-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.astronaut-card {
+  background: #ffffff;
+  border-radius: var(--radius);
+  padding: 20px;
+  transition: all 0.35s ease;
+  border: 1px solid rgba(34, 197, 94, 0.2);
+  box-shadow: 0 0 18px rgba(34, 197, 94, 0.1);
+}
+
+.astronaut-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 30px rgba(34, 197, 94, 0.25),
+              0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.astronaut-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: var(--radius);
+  margin-bottom: 15px;
+}
+
+.astronaut-card h3 {
+  margin-bottom: 8px;
+  color: #166534;
+  text-shadow: 0 0 5px rgba(34, 197, 94, 0.25);
+}
+
+.astronaut-card p {
+  color: #374151;
+}
+
+.story-video .video-frame {
+  width: 100%;
+  max-width: 720px;
+  margin-top: 30px;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+}
+
+.closing {
+  position: relative;
+  background: rgba(21, 128, 61, 0.35);
+  color: #fff;
+  padding: 100px 50px;
+  border-radius: 22px;
+  max-width: 1000px;
+  margin: 100px auto;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.closing::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(16, 94, 46, 0.6), rgba(34, 197, 94, 0.45));
+  z-index: 0;
+}
+
+.closing h2,
+.closing p {
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+.closing h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #ffffff, #e9f9ec, #b5f5c2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+.closing p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  max-width: 780px;
+  margin: 0 auto;
+  opacity: 0.98;
+  color: #f1fdf4;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* dark mode */
+.theme-dark .closing {
+  background: rgba(25, 25, 25, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+}
+
+.theme-dark .closing::before {
+  background: linear-gradient(135deg, rgba(6, 95, 70, 0.55), rgba(4, 120, 87, 0.45));
+}
+
+.theme-dark .closing h2 {
+  background: linear-gradient(90deg, #b2ffcc, #4ade80, #86efac);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.theme-dark .closing p {
+  color: #d9f9e4;
+}
+
+
+.theme-dark .space-section h2,
+.theme-dark .astronaut-card h3,
+.theme-dark .closing h2 {
+  color: #22c55e !important;
+}
+
+.theme-dark .space-section p,
+.theme-dark .astronaut-card p,
+.theme-dark .closing p {
+  color: #d1d5db;
+}
+
+.theme-dark .astronaut-card {
+  background: linear-gradient(180deg, #0f1a1a 0%, #142420 100%);
+  border: 1px solid rgba(34, 197, 94, 0.25);
+  box-shadow: 0 0 22px rgba(34, 197, 94, 0.15),
+              0 8px 25px rgba(0, 0, 0, 0.35);
+  color: #e5e7eb;
+}
+
+.theme-dark .astronaut-card:hover {
+  background: linear-gradient(180deg, #193a30 0%, #1f4a3a 100%);
+  box-shadow: 0 0 40px rgba(34, 197, 94, 0.35),
+              0 12px 28px rgba(0, 0, 0, 0.45);
+  transform: translateY(-6px);
+}
+
+.theme-dark .closing {
+  background: rgba(20, 83, 45, 0.85); 
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}

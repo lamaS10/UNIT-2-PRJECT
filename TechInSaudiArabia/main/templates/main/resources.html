@@ -1,0 +1,103 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}Useful Links{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/resources.css' %}">
+{% endblock %}
+
+{% block content %}
+<section class="useful-links-section">
+  <div class="container">
+    <h1 class="section-title">Useful Links</h1>
+    <p class="section-description">
+      Explore key Saudi platforms that are shaping the Kingdom's future in technology, innovation, and digital transformation.
+    </p>
+
+    <div class="links-list">
+      <div class="link-card">
+        <div class="card-header">
+          <img src="{% static 'images/useful_links/sdaia.png' %}" alt="SDAIA Logo" class="link-logo">
+          <h2>SDAIA</h2>
+        </div>
+        <p>Saudi Data & AI Authority — driving national innovation through data and artificial intelligence.</p>
+        <a href="https://sdaia.gov.sa" target="_blank" class="visit-btn">Visit Site</a>
+      </div>
+
+      <div class="link-card">
+        <div class="card-header">
+          <img src="{% static 'images/useful_links/neom.png' %}" alt="NEOM Logo" class="link-logo">
+          <h2>NEOM</h2>
+        </div>
+        <p>The world's most ambitious city project redefining urban living, sustainability, and technology.</p>
+        <a href="https://www.neom.com" target="_blank" class="visit-btn">Visit Site</a>
+      </div>
+
+      <div class="link-card">
+        <div class="card-header">
+          <img src="{% static 'images/useful_links/dga.png' %}" alt="DGA Logo" class="link-logo">
+          <h2>Digital Government Authority</h2>
+        </div>
+        <p>Leading the digital transformation of Saudi Arabia's government services.</p>
+        <a href="https://dga.gov.sa" target="_blank" class="visit-btn">Visit Site</a>
+      </div>
+
+      <div class="link-card">
+        <div class="card-header">
+          <img src="{% static 'images/useful_links/ssc.png' %}" alt="SSA Logo" class="link-logo">
+          <h2>Saudi Space Agency</h2>
+        </div>
+        <p>Advancing the Kingdom's participation in global space exploration and technology.</p>
+        <a href="https://ssa.gov.sa/ar/home" target="_blank" class="visit-btn">Visit Site</a>
+      </div>
+
+      <div class="link-card">
+        <div class="card-header">
+          <img src="{% static 'images/useful_links/aramco.png' %}" alt="Aramco Logo" class="link-logo">
+          <h2>Aramco</h2>
+        </div>
+        <p>Global leader in energy and innovation, driving sustainable energy development in Saudi Arabia.</p>
+        <a href="https://www.aramco.com" target="_blank" class="visit-btn">Visit Site</a>
+      </div>
+
+      <div class="link-card">
+        <div class="card-header">
+          <img src="{% static 'images/useful_links/absher.png' %}" alt="Absher Logo" class="link-logo">
+          <h2>Absher</h2>
+        </div>
+        <p>The leading eGovernment platform offering secure, accessible services to citizens and residents.</p>
+        <a href="https://www.absher.sa" target="_blank" class="visit-btn">Visit Site</a>
+      </div>
+
+      <div class="link-card">
+        <div class="card-header">
+          <img src="{% static 'images/useful_links/nafath.png' %}" alt="Nafath Logo" class="link-logo">
+          <h2>Nafath</h2>
+        </div>
+        <p>Unified digital identity platform enabling secure access to government services.</p>
+        <a href="https://my.gov.sa/ar/services/119727" target="_blank" class="visit-btn">Visit Site</a>
+      </div>
+
+      <div class="link-card">
+        <div class="card-header">
+          <img src="{% static 'images/useful_links/tawakkalna.png' %}" alt="Tawakkalna Logo" class="link-logo">
+          <h2>Tawakkalna</h2>
+        </div>
+        <p>The official national app by SDAIA providing access to digital government services and real-time updates.</p>
+        <a href="https://www.tawakkalna.gov.sa" target="_blank" class="visit-btn">Visit Site</a>
+      </div>
+
+      <div class="link-card">
+        <div class="card-header">
+          <img src="{% static 'images/useful_links/etimad.jpg' %}" alt="Etimad Logo" class="link-logo">
+          <h2>Etimad Platform</h2>
+        </div>
+        <p>A unified platform by the Ministry of Finance offering digital financial and procurement services for government entities.</p>
+        <a href="https://etimad.sa" target="_blank" class="visit-btn">Visit Site</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,94 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}Digital Transformation - Tech in Saudi Arabia{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/digital.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<section class="page-banner digital-banner">
+  <div class="overlay"></div>
+  <div class="banner-content">
+    <h1>Digital Transformation</h1>
+    <p>Empowering Saudi Arabia's future through innovative digital government services.</p>
+  </div>
+</section>
+
+<section class="page-digital">
+  <div class="container">
+    <h2 class="section-title">Leading Platforms in Saudi Arabia's Digital Evolution</h2>
+
+    <div class="cards-grid">
+
+      <div class="card">
+        <div class="card-image">
+          <img src="{% static 'images/digital/absher.png' %}" alt="Absher logo">
+        </div>
+        <div class="card-content">
+          <h3>Absher</h3>
+          <p>
+            A unified government platform providing 350+ e-services such as passport renewal,
+            residence permits, and traffic violations — making government services easier than ever.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image">
+          <img src="{% static 'images/digital/tawakkalna.png' %}" alt="Tawakkalna logo">
+        </div>
+        <div class="card-content">
+          <h3>Tawakkalna</h3>
+          <p>
+            Started as a health-tracking app during COVID-19, <strong>Tawakkalna has evolved into a comprehensive national platform</strong> 
+            offering 200+ digital services, including digital IDs, driving licenses, vaccination records, 
+            and <strong>secure access to government platforms</strong> — enhancing convenience and digital safety.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image">
+          <img src="{% static 'images/digital/nafath.png' %}" alt="Nafath logo">
+        </div>
+        <div class="card-content">
+          <h3>Nafath</h3>
+          <p>
+            A national unified login system that allows citizens and residents to access multiple
+            government services securely with a single account.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image">
+          <img src="{% static 'images/digital/etimad.jpg' %}" alt="Etimad logo">
+        </div>
+        <div class="card-content">
+          <h3>Etimad</h3>
+          <p>
+            Managed by the Ministry of Finance, <strong>Etimad is a unified financial platform</strong> 
+            that digitizes all government transactions — from budget management and tenders 
+            to payments and contracts — ensuring <strong>transparency, efficiency, and integration</strong> 
+            across public entities.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <section class="digital-vision">
+      <div class="container">
+        <h2>The Future of Saudi Digital Transformation </h2>
+        <p>
+          These platforms embody Saudi Arabia's vision for a digitally empowered nation,
+          where technology drives efficiency, transparency, and innovation —
+          building the foundation for a smarter, more connected future under Vision 2030.
+        </p>
+      </div>
+    </section>
+
+{% endblock %}

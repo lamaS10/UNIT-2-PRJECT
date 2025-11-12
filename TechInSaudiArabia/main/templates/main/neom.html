@@ -1,0 +1,95 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}NEOM - Tech in Saudi Arabia{% endblock %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/neom.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<section class="neom-hero">
+  <div class="overlay"></div>
+  <div class="content">
+    <h1 class="fade-in">NEOM</h1>
+    <p class="fade-in delay-1">
+      A bold vision shaping the future of sustainable living, innovation, and technology in Saudi Arabia.
+    </p>
+  </div>
+</section>
+
+
+<section class="about-neom">
+  <div class="about-card">
+    <h2>About NEOM</h2>
+    <p>
+      NEOM is a visionary region in northwest Saudi Arabia, designed to push the
+      boundaries of innovation, technology, and sustainability. It is a living
+      laboratory for human progress — powered entirely by renewable energy,
+      reimagining how communities, cities, and economies operate.
+    </p>
+  </div>
+</section>
+
+
+
+<section class="neom-projects">
+  <div class="container">
+    <h2>NEOM Projects</h2>
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <img src="{% static 'images/neom/theline.jpg' %}" alt="The Line Project">
+        <div class="project-info">
+          <h3>The Line</h3>
+          <p>
+            A 170 km linear city without cars or streets — built around nature, offering sustainable living with all essentials within a five-minute walk.
+          </p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="{% static 'images/neom/oxagon.jpeg' %}" alt="Oxagon Project">
+        <div class="project-info">
+          <h3>Oxagon</h3>
+          <p>
+            The industrial heart of NEOM — the world's largest floating structure, focused on clean industries, robotics, and innovation.
+          </p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="{% static 'images/neom/trojena.jpg' %}" alt="Trojena Project">
+        <div class="project-info">
+          <h3>Trojena</h3>
+          <p>
+            A futuristic mountain destination combining adventure, luxury, and sustainable tourism — host of the 2029 Asian Winter Games.
+          </p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="{% static 'images/neom/sindalah.png' %}" alt="Sindalah Project">
+        <div class="project-info">
+          <h3>Sindalah</h3>
+          <p>
+            A luxurious island resort and global hub for yachting, marine life, and world-class hospitality — the first NEOM destination to open.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="neom-vision">
+  <div class="container">
+    <h2>Vision for the Future</h2>
+    <p>
+      NEOM represents the spirit of Saudi Vision 2030 — innovation, sustainability, and opportunity.
+      It is redefining what's possible and creating a new model for living in harmony with nature and technology.
+    </p>
+  </div>
+</section>
+
+{% endblock %}

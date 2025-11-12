@@ -1,0 +1,67 @@
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block title %}Space - Tech in Saudi Arabia{% endblock %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/space.css' %}">
+{% endblock %}
+
+{% block content %}
+<section class="page-banner space-banner">
+  <div class="overlay"></div>
+  <div class="banner-content">
+    <h1>Towards Space... Where Dreams Become Achievements</h1>
+    <p>Saudi Arabia's journey to explore space and inspire future generations</p>
+  </div>
+</section>
+
+<section class="space-section about-space">
+  <h2>Saudi Space Agency</h2>
+  <p>
+    Established in 2018, the Saudi Space Agency leads the Kingdom's ambitions in space exploration,
+    scientific research, and advanced technology — paving the way for innovation in line with Vision 2030.
+  </p>
+</section>
+
+<section class="space-section astronauts">
+  <h2>Saudi Astronauts</h2>
+  <div class="astronaut-grid">
+    <div class="astronaut-card">
+      <img src="{% static 'images/space/rayyanah-barnawi.jpg' %}" alt="Rayyanah Barnawi">
+      <h3>Rayyanah Barnawi</h3>
+      <p>The first Saudi female astronaut to reach the International Space Station</p>
+    </div>
+    <div class="astronaut-card">
+      <img src="{% static 'images/space/ali-alqarni.jpg' %}" alt="Ali Al-Qarni">
+      <h3>Ali Al-Qarni</h3>
+      <p>Saudi astronaut and pilot who participated in the Kingdom's first ISS mission</p>
+    </div>
+    <div class="astronaut-card">
+      <img src="{% static 'images/space/sultan_bin_salman.jpeg' %}" alt="Sultan bin Salman">
+      <h3>Prince Sultan bin Salman</h3>
+      <p>The first Arab, Muslim, and Saudi astronaut to travel to space in 1985</p>
+    </div>
+  </div>
+</section>
+
+<section class="space-section story-video">
+  <h2>Rayyanah Barnawi's Inspiring Story</h2>
+  <p>
+    From a little girl gazing at the stars to the first Saudi woman in space — 
+    Rayyanah Barnawi's journey is a symbol of determination and limitless ambition,
+    inspiring every Saudi girl who believes that dreams can reach the stars.
+  </p>
+  <video controls class="video-frame">
+    <source src="{% static 'video/ryana-story.mp4' %}" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</section>
+
+<section class="space-section closing">
+  <h2>Ambition Knows No Limits</h2>
+  <p>
+    Under Vision 2030, Saudi Arabia continues to expand its space exploration efforts,
+    proving that the impossible is just the beginning of the journey.
+  </p>
+</section>
+{% endblock %}

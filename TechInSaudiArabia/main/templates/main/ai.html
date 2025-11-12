@@ -1,0 +1,86 @@
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block title %}AI in Saudi Arabia - Tech in Saudi Arabia{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/ai.css' %}">
+{% endblock %}
+
+
+{% block content %}
+
+<section class="hero-ai hero-with-bg" id="hero-ai">
+  <div class="overlay"></div>
+  <div class="container hero-content">
+    <h1>Artificial Intelligence in Saudi Arabia</h1>
+    <p>Empowering Vision 2030 through data, innovation, and smart transformation.</p>
+    <a href="#sdaia-section" class="btn btn-primary">Learn More about SDAIA</a>
+  </div>
+</section>
+
+
+<section class="ai-highlights">
+  <h2 class="section-title">
+    <span>AI in Saudi Arabia</span>
+    <small>Vision, Innovation & Empowerment</small>
+  </h2>
+
+  <div class="ai-cards-container">
+
+    <div class="ai-card vision">
+      <h3>Vision</h3>
+      <p>Artificial Intelligence stands as a cornerstone of Saudi Arabia's Vision 2030 — powering sustainable innovation and smarter national development.</p>
+    </div>
+
+    <div class="ai-card innovation">
+      <h3>Innovation</h3>
+      <p>AI is transforming healthcare, education, energy, and smart cities — enhancing efficiency, enabling creativity, and improving quality of life.</p>
+    </div>
+
+    <div class="ai-card empowerment">
+      <h3>Empowerment</h3>
+      <p>Through SDAIA's leadership, Saudi talent and research thrive — driving innovation and establishing the Kingdom as a global hub for AI.</p>
+    </div>
+
+  </div>
+</section>
+
+
+
+<section id="sdaia-section" class="sdaia-section reveal">
+  <div class="sdaia-container">
+    <div class="sdaia-text">
+      <h2 class="sdaia-title">
+        <span>SDAIA</span> — Saudi Data & AI Authority
+      </h2>
+      <div class="sdaia-divider"></div>
+
+      <p class="sdaia-desc">
+        The <strong>Saudi Data & AI Authority (SDAIA)</strong> drives the Kingdom's transformation toward a smart, data-driven future — unlocking innovation, enabling efficiency, and empowering <strong>Vision 2030</strong> through advanced data and AI technologies.
+      </p>
+
+      <p class="sdaia-subdesc">
+        SDAIA oversees three key entities that together enable national progress through data and AI:
+      </p>
+
+      <ul class="sdaia-list">
+        <li><strong>National Data Management Office (NDMO)</strong> — establishes policies and data governance frameworks.</li>
+        <li><strong>National Information Center (NIC)</strong> — delivers secure digital infrastructure and services.</li>
+        <li><strong>National Center for Artificial Intelligence (NCAI)</strong> — drives innovation, research, and AI excellence.</li>
+      </ul>
+
+      <blockquote class="sdaia-mission">
+        <em>SDAIA's mission: Empowering Saudi Arabia to lead the world in data and AI innovation — building a smarter, more connected nation.</em>
+      </blockquote>
+
+      <a href="https://sdaia.gov.sa" target="_blank" class="sdaia-btn">Visit SDAIA</a>
+    </div>
+
+    <div class="sdaia-image">
+      <img src="{% static 'images/ai/sdaia-logo.png' %}" alt="SDAIA Logo">
+    </div>
+  </div>
+</section>
+
+{% endblock %}
