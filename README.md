@@ -1,63 +1,45 @@
-# UNIT-2-PROJECT
+# 🇸🇦 Tech in Saudi Arabia
 
-## Using Django create a project about our beloved kingdom of your choosing. Examples :
-- Tourism in Saudi Arabia.
-- Culture & Heritage in Saudi Arabia.
-- Manufacturing & Industries in Saudi Arabia.
-- Agriculture in Saudi Arabia.
-- Science in Saudi Arabia.
-- History of Saudi Arabia.
-- etc.....
+A Django web project that highlights Saudi Arabia’s achievements and progress in technology under **Vision 2030**.  
+The website focuses on modern design, clean layout, and smooth user experience in both **light and dark mode**.
 
+---
 
-# Minumum Requirements
-- Use Django.
-- Use templates & templates inheritance.
-- Use dynamic urls where applicable.
-- Use static files where applicable.
-- homepage + other 6 pages.
-- Coherent, uniform design .
-- Implement dark and light mode.
-- You can use a CSS library to style your website (such as Bootstrap or equivalent)
-- You can use a cdn or a cloud storage to host large files such as large videos (example: Goolge Firebase Cloud Storage: https://firebase.google.com/docs/storage)
+##  About the Project
+The site includes **8 pages**, each one showing a different area of technology in the Kingdom:
 
+- **Home:** Introduction and navigation to all topics  
+- **Artificial Intelligence:** Focus on SDAIA and data-driven innovation  
+- **NEOM:** The city of the future and sustainable technology  
+- **Digital Transformation:** Smart government and e-services  
+- **Space:** Saudi Space Agency   
+- **Energy:** Renewable projects  
+- **Resources:** Useful links to major Saudi platforms  
+- **Contact:**  Page to connect and share feedback about the project
 
+The design uses **Saudi green** as the main theme and keeps the overall style consistent, elegant, and minimal.
 
-# Example : TOURISM-PROJECT
+---
 
-## Using Django create a website for Tourism in Saudi Arabia . The project name is : Tourister
+##  Main Features
+- Light & Dark Mode using Django cookies (no JavaScript)  
+- Fully responsive design for all devices  
+- Animated buttons and hover effects  
+- Organized content with short and clear text  
 
-### Your website has the following pages :
+---
 
-#### "" : home page , with the following content:
-- Title of the page , with a catchy phrase about tourism in Saudi Arabia
-- A single wide image covering the page.
-- A paragraph about the tourism in Saudi Arabia in General.
-- A list of cities pages with links to them (the pages are listed down below).
+##  Technologies Used
+- **Framework:** Django  
+- **Languages:** HTML, CSS  
 
+---
 
-#### "city/Riyadh/"
-- Title of city with a catchy phrase
-- A Gallery of images (you can use a Carousel) for the city.
-- A short video about the city . (you can embed a youtube video , or use a video hosted on your website)
+##  Purpose
+This project was created for **UNIT 2**,  
+to reflect the role of technology in achieving Saudi Arabia’s Vision 2030 goals.
+I focused on creating a seamless and visually consistent experience.
 
-#### "city/Abha/"
-- Title of city with a catchy phrase.
-- Top Attractions in the city.
-- A brief about the city.
-- A Gallery of images (you can use a Carousel) for the city.
-- A short video about the city . (you can embed a youtube video , or use a video hosted on your website)
+---
 
-#### "city/Mekkah/"
-- Title of city with a catchy phrase.
-- Top Attractions in the city.
-- A brief about the city.
-- A Gallery of images (you can use a Carousel) for the city.
-- A short video about the city . (you can embed a youtube video , or use a video hosted on your website)
-
-#### "city/AlUla/"
-- Title of city with a catchy phrase.
-- Top Attractions in the city.
-- A brief about the city.
-- A Gallery of images (you can use a Carousel) for the city.
-- A short video about the city . (you can embed a youtube video , or use a video hosted on your website)
+### 👩 Developed by: Lama  
