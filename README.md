@@ -1,4 +1,4 @@
-# 🇸🇦 Tech in Saudi Arabia
+#  Tech in Saudi Arabia
 
 A Django web project that highlights Saudi Arabia’s achievements and progress in technology under **Vision 2030**.  
 The website focuses on modern design, clean layout, and smooth user experience in both **light and dark mode**.
@@ -42,4 +42,4 @@ I focused on creating a seamless and visually consistent experience.
 
 ---
 
-### 👩 Developed by: Lama  
+###  Developed by: Lama Saud Alharbi
